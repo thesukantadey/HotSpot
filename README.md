@@ -10,3 +10,12 @@ Get steady-state temperature map:
 Transient simulation with steady-state results as initial temperature:
 
 ./hotspot -c hotspot.config -init_file example.steady -f ev6.flp -p example.ptrace -o example.ttrace -model_type grid -detailed_3D on -grid_layer_file example.lcf
+
+
+
+# For the 3D testcase running instance
+
+Get steady-state temperature map:
+
+../hotspot -c ../hotspot.config -f ./ev6_3D_core_layer.flp -p ev6_3D.ptrace -steady_file ev6_3D.steady -model_type grid -detailed_3D on -grid_layer_file ev6_3D.lcf
+
