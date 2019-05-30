@@ -1,6 +1,12 @@
 # HotSpot
-HotSpot is an accurate and fast thermal model suitable for use in architectural studies.
+HotSpot is an accurate and fast thermal model suitable for use in architectural studies. A simple running instance is shown below.
 
-A simple running instance:
+
+Get steady-state temperature map:
 
 ./hotspot -c hotspot.config -f ev6.flp -p example.ptrace -steady_file example.steady -model_type grid -detailed_3D on -grid_layer_file example.lcf
+
+
+Transient simulation with steady-state results as initial temperature:
+
+./hotspot -c hotspot.config -init_file example.steady -f ev6.flp -p example.ptrace -o example.ttrace -model_type grid -detailed_3D on -grid_layer_file example.lcf
