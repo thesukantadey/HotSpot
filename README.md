@@ -24,4 +24,8 @@ Transient simulation with steady-state results as initial temperature:
 
 ../hotspot -c ../hotspot.config -init_file ev6_3D.steady -f ./ev6_3D_core_layer.flp -p ev6_3D.ptrace -o ev6_3D.ttrace -model_type grid -detailed_3D on -grid_layer_file ev6_3D.lcf
 
+# For plotting using 3Dfig
+
+./3Dfig.pl -a 0.95 -f 10 -s 0 ./example.lcf
+
 
