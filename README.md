@@ -13,7 +13,9 @@ Transient simulation with steady-state results as initial temperature:
 
 
 
-# For the 3D testcase running instance (following commands are from the inside of 3D_testcase directory)
+# For the 3D testcase running instance 
+
+(following commands are from the inside of 3D_testcase directory)
 
 Get steady-state temperature map:
 
@@ -28,4 +30,4 @@ Transient simulation with steady-state results as initial temperature:
 
 ./3Dfig.pl -a 0.95 -f 10 -s 0 ./example.lcf
 
-
+../3Dfig.pl -a 0.95 -f 10 -s 0 ./ev6_3D.lcf 
